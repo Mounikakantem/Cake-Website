@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{ margin:0;
+            padding:0;
+        }
+        header{
+            position: fixed; 
+            align-self: auto;
+            width:100%;
+            top:0;
+        }   
+        footer {
+             background-color:lightgrey;
+             position: fixed; 
+             bottom:0;
+             color: black; 
+             width:100vw;
+             display: flex; 
+             flex-direction: column-reverse;
+
+        }     
+        .navbar {
+            font-weight: bold; 
+            height:50px;
+            width:100%;
+            flex-direction: row;
+            justify-content: flex-start; 
+            display: flex; 
+            background-color:lightgrey;
+            font-size:23px;
+            color:crimson;
+            padding-top: 12px; 
+            font-family: 'Dancing Script',cursive;
+        }   
+        ul {
+            display: flex;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: flex-end;
+        } 
+        li {
+            list-style-type:none ; 
+            display: flex; 
+            justify-content: flex-end; 
+            padding:12px;
+            color: white !important; 
+        }  
+        a {
+            color:brown;
+            text-decoration: none; 
+            font-family:"fantasy";
+        } 
+        .footer-icons {
+            display: flex; 
+            justify-content: center;
+        } 
+        .icon-container {
+            background-color: rgb(110, 175, 110); 
+            text-align: center;
+            border-radius: 45px; 
+            width: 20px; 
+            margin: 16px; 
+            cursor: pointer; 
+            padding: 10px;
+
+        }  
+        i {
+           color: lavender 8px;
+       }   
+       a {
+           color:rebeccapurple; 
+           font-family: 'Dancing Script',cursive;
+ 
+       } 
+        .background-container{
+            background-image: url("aboutus.jpg");
+            height:50vh;
+            color:black;
+            font-family:"Roboto";
+            font-size:20px;
+            margin-top:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .span-style{
+            color:red;
+            /* background-color:gray; */
+        }
+        .title{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        img{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+                <img src= "logo.jpg"/>
+                <h2 class = "heading" > CAKE <span class = "span-style" ></span></h2>
+                <ul class = "color-list">
+                     <li> <a href = "./index.html">Home</a></li>
+                     <li> <a href = "./menu.html">Gallery</a></li>
+                     <li> <a href = "./aboutus.html">About us</a></li>
+
+                     <li> <a href = "./review.html">Payment</a></li>
+                    </ul> 
+                </nav>
+            </header>
+    <div class="background-container"> 
+        <h1 class="title">ABOUT US</h1> 
+        <p>Welcome to our Cake Business,We take pride in bringing you delicious cakes for every <br>
+           occasion.We create bespoke wedding cakes,birthday,graduations,special occasions and our <br>
+           amazing designs and get in touch with us with your requirements for the suitable quote. </p>
+    </div>
+</body>
+</html>

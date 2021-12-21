@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+         *{margin:0;
+         padding:0;
+        }  
+        header{
+            position: fixed; 
+            align-self: auto;
+            width:100%;
+            top:0;
+        }   
+        footer {
+             background-color:lightgrey;
+             position: fixed; 
+             bottom:0;
+             color: black; 
+             width:100vw;
+             display: flex; 
+             flex-direction: column-reverse;
+
+        }     
+        .navbar {
+            font-weight: bold; 
+            height:50px;
+            width:100%;
+            flex-direction: row;
+            justify-content: flex-start; 
+            display: flex; 
+            background-color:lightgrey;
+            font-size:23px;
+            color:crimson;
+            padding-top: 12px; 
+            font-family: 'Dancing Script',cursive;
+        }   
+        ul {
+            display: flex;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: flex-end;
+        } 
+        h1 { 
+           
+             color:rebeccapurple;
+            text-align: center; 
+            font-family: 'Times new roman';
+            font-weight: 900; 
+            font-style: italic;
+
+        } 
+        li {
+            list-style-type:none ; 
+            display: flex; 
+            justify-content: flex-end; 
+            padding:12px;
+            color: white !important; 
+        }  
+        a {
+            color:brown;
+            text-decoration: none; 
+            font-family:"fantasy";
+        } 
+        .image {
+            background-image: url("bg.jpg"); 
+            background-size: cover; 
+            height: 90vh; 
+            width: 100%;
+            display: flex; 
+            align-items: center; 
+             padding: 12px; 
+             justify-content: center;
+        } 
+
+        p {
+            color:rebeccapurple;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center; 
+            font-family: cursive;
+        }  
+        .footer-icons {
+            display: flex; 
+            justify-content: center;
+        } 
+        .icon-container {
+            background-color: rgb(110, 175, 110); 
+            text-align: center;
+            border-radius: 45px; 
+            width: 20px; 
+            margin: 16px; 
+            cursor: pointer; 
+            padding: 10px;
+
+        }   
+        .container { 
+            position: fixed;
+            height: 16vh;
+            width: 45vw;
+            background: rgba(46, 43, 43, 0.5);
+        }  
+       i {
+           color: lavender 8px;
+       }   
+       a {
+           color:rebeccapurple; 
+           font-family: 'Dancing Script',cursive;
+ 
+       } 
+       .paragraph {
+           text-align: center; 
+           margin-top: 23px;
+       }  
+       .heading {
+           padding-left: 9px; 
+           color:palevioletred;
+       }  
+       .span-style {
+           color:darkcyan;
+           font: 1em sans-serif;
+       } 
+       a:hover {
+           text-decoration: underline;
+       }
+        </style>
+      
+</head>    
+<body>
+    <header>
+        <nav class = "navbar">
+                <img src= "logo.jpg"/>
+                <h2 class = "heading" > CAKE <span class = "span-style" ></span></h2>
+                <ul class = "color-list">
+                     <li> <a href = "./index.html">Home</a></li>
+                     <li> <a href = "./menu.html">Gallery</a></li>
+                     <li> <a href = "./aboutus.html">About us</a></li>
+
+                     <li> <a href = "./review.html">Payment</a></li>
+                    </ul> 
+                </nav>
+            </header>
+             <div class = "image">  
+                <div class = "container">
+                    <h1 >A party without a cake is just a meeting <br>Hurry up!!! </h1>  
+
+                </div>
+               
+ 
+
+                 
+                </div>  
+        <footer>
+          <section class = "footer-icons">
+            <section class = "icon-container">
+                <i class = "fab fa-google"></i>
+            </section> 
+            <section class = "icon-container">
+                <i class = "fab fa-instagram"></i>
+            </section> 
+            <section class = "icon-container">
+                <i class = "fab fa-twitter"></i>
+            </section> 
+              <section class = "icon-container">
+                  <i class = "fab fa-facebook-f"></i>
+              </section>  
+
+          </section>
+
+     <p class = "paragraph">Follow Us</p>
+        </footer>
+  
+ </body>
+</html> 

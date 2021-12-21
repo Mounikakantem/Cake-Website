@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+         *{margin:0;
+         padding:0;
+        }  
+        header{
+            position: fixed; 
+            align-self: auto;
+            width:100%;
+            top:0;
+        }   
+        footer {
+             background-color:lightgrey;
+             position: fixed; 
+             bottom:0;
+             color: black; 
+             width:100vw;
+             display: flex; 
+             flex-direction: column-reverse;
+
+        }     
+        .navbar {
+            font-weight: bold; 
+            height:50px;
+            width:100%;
+            flex-direction: row;
+            justify-content: flex-start; 
+            display: flex; 
+            background-color:lightgrey;
+            font-size:23px;
+            color:crimson;
+            padding-top: 12px; 
+            font-family: 'Dancing Script',cursive;
+        }   
+        ul {
+            display: flex;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: flex-end;
+        } 
+        li {
+            list-style-type:none ; 
+            display: flex; 
+            justify-content: flex-end; 
+            padding:12px;
+            color: white !important; 
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        a{
+            color:brown;
+            text-decoration:none;
+        }
+            .div-container{
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+                margin:5px;
+            }
+            .bg-container{
+                border-radius:10px;
+                height:50vh;
+                display:flex;
+                flex-direction:row;
+                margin-top:5px;
+                justify-content:space-around;
+                background-color: whitesmoke;
+            }
+            a {
+           color:rebeccapurple; 
+           font-family: 'Dancing Script',cursive;
+ 
+       } 
+           
+            .card-container{
+                background-color:coral;
+                height:250px;
+                width:200px;
+                display:flex;
+                flex-direction:column;
+                overflow: hidden;
+                border-radius: 15px;
+            }
+            .card-container1{
+                background-color:bisque;
+                padding:10px;
+                font-family:monospace;
+                text-align:left;
+                color:coral;
+            }
+         
+        .image-container{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("menu1.jpg");
+            } 
+            .span-style{
+                color:red;
+            
+            }    
+            #cartResults{
+                display:flex;
+                justify-content:space-around;
+                color: skyblue;
+                background-color:black;
+            }   
+            .image-container1{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("menu2.jpg");
+            }
+            .image-container2{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("./menu3.jpg");
+            }      
+            .image-container3{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("./menu4.jpg");
+            }
+            .h2pd{
+                padding-left:10px;
+            }
+            .image-container4{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("./menu5.jpg");
+            }
+            .image-container5{
+                text-align:center;
+                height:500px;
+                padding:20px;
+                background-size:100% 100%;
+                background-image: url("menu6.jpg");
+            }
+            b{
+                font-family:monospace;
+                text-align:left;
+            }
+            .button{
+                height:30px;
+                font-size:10px;
+                width:60px;
+                background-color:goldenrod;
+                border-radius:10px;
+                color:aliceblue;
+                border-width:0px;
+            }
+            #Size{
+                color:goldenrod;
+                outline: none;
+                border: 0px;
+            }
+            .footer-icons {
+            display: flex; 
+            justify-content: center;
+        } 
+        .icon-container {
+            background-color: rgb(110, 175, 110); 
+            text-align: center;
+            border-radius: 45px; 
+            width: 20px; 
+            margin: 16px; 
+            cursor: pointer; 
+            padding: 10px;
+
+        }   
+        .paragraph {
+           text-align: center; 
+           margin-top: 5px;
+       }  
+        .container { 
+            position: fixed;
+            height: 16vh;
+            width: 45vw;
+            background: rgba(46, 43, 43, 0.5);
+        }  
+       i {
+           color: lavender 8px;
+       }   
+    
+          
+                
+    </style>
+      
+    </head>    
+    <body>
+        <header>
+            <nav class = "navbar">
+                    <img src= "logo.jpg"/>
+                    <h2 class = "heading" > CAKE <span class = "span-style" ></span></h2>
+                    <ul class = "color-list">
+                         <li> <a href = "./index.html">Home</a></li>
+                         <li> <a href = "./menu.html">Gallery</a></li>
+                         <li> <a href = "./aboutus.html">About us</a></li>
+
+                         <li> <a href = "./review.html">Payment</a></li>
+                        </ul> 
+                    </nav>
+                </header>
+
+                <div class="flex1">
+                    <div class="div-container">
+                        <div class="bg-container">
+                            <div class="card-container">
+                                <div class="image-container img">
+                                    <p></p>
+                                </div>
+                                <div class="card-container1">
+                                  
+                                    <b class="price">Price $300/kg</b>
+                                    <h4 id="name">Chocolate cake</h4>
+                        
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart" class="button">Add cart</button>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="image-container1 img">
+                                </div>
+                                <div class="card-container1">
+                                  
+                                    <b class="price">Price $275/kg</b>
+                                    <h4 id="name">Pound Cake</h4>
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart" class="button">Add cart</button>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="image-container2 img">
+                                </div>
+                                <div class="card-container1" >
+                                    <b class="price">Price $275/kg</b>
+                                    <h4 id="name">Pound Chocolate cake</h4>
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart"  class="button" >Add cart</button>
+                                </div>
+                            </div>       
+                        
+                        </div>
+                        <div class="bg-container">
+                            <div class="card-container">
+                                <div class="image-container3 img">
+                                </div>
+                                <div class="card-container1">
+                                  
+                                    <b class="price">$400/kg</b>
+                                    <h4 id="name">Caramel cake</h4>
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart" class="button">Add cart</button>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="image-container4 img">
+                                </div>
+                                <div class="card-container1">
+                                  
+                                    <b class="price">$400/kg</b>
+                                    <h4 id="name">Vanilla butter cream froasting</h4>
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart" class="button">Add cart</button>
+                                </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="image-container5 img">
+                                </div>
+                                <div class="card-container1">
+                                  
+                                    <b class="price">$400/kg</b>
+                                    <h4 id="name">Rose flavoured cake</h4>
+                                    <label>Size</label>
+                                     <select name="Size" id="Size">
+                                        <option value="Small">1/2 KG</option>
+                                        <option value="Medium">1 KG</option>
+                                        <option value="Large">2 KG</option>
+                                     </select>
+                                    <button type="button" name="button" value="Add to cart" class="button" >Add cart</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div id="cartResults">
+                       
+                    </div>
+
+                <footer>
+                    <section class="footer-icons">
+                        <div class="icon-container">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fab fa-instagram"></i>
+                        </div> 
+                        <div class="icon-container">
+                            <i class="fab fa-google"></i>
+                        </div> 
+                    </section>
+                    <p class="paragraph">Follow Us</p>
+                </footer>
+            </div>
+
+                </body>
+                <script src="./menu.js"></script>
+
+                </html>
