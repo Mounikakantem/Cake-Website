@@ -4,27 +4,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <link rel = "stylesheet" href  = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     .rating span { float:right; position:relative; }
     .rating span input {
         position:absolute;
+
         top:0px;
         left:0px;
         opacity:0;
     }
     .rating span label {
         display:inline-block;
-        margin-right:3px;
-        line-height:28px;
+        margin-right:5px;
+        line-height:20px;
         width:31px;
         height:31px;
         color:#FFF;
         background:#ccc;
         font-size:28px;
         border-radius:50%;
-        -webkit-border-radius:50%;
-        text-align:center;
+        -webkit-border-radius:40%;
+        text-align:center;  
     }
     .rating span:hover ~ span label,
     .rating span:hover label,
@@ -41,8 +43,9 @@
         width: 100vw;
         flex-direction: column;
         color:brown;
-        font-family:monospace;
-        background-color: honeydew;
+        font-family:Georgia;
+        background-color:grey;
+        text-shadow: 2px 2px wheat;
     }
     .button{
         margin-top: 10px;
@@ -99,11 +102,12 @@
    
         <h1>Feedback with your valuable rating</h1>
         <div class="rating">
-            <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
-            <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
-            <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
-            <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
-            <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+            <span><input class = "fa fa-star" name="rating" id="str5" value="5"><label for="str5"></label></span>
+            <span><input class = "fa fa-star" name="rating" id="str4" value="4"><label for="str4"></label></span>
+            <span><input class="fa fa-star" name="rating" id="str3" value="3"><label for="str3"></label></span>
+            <span><input  class="fa fa-star" name="rating" id="str2" value="2"><label for="str2"></label></span>
+            <span><input  class= "fa fa-star" name="rating" id="str1" value="1"><label for="str1"></label></span>
+            
         </div>
             <div class="button1">
                 <button class="button"><a href="./index.html">Submit</a></button> 
